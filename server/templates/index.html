@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+</head>
+
+<body style="background-color: white">
+</body>
+
+<script>
+var timerId = setInterval(poll_state, 1000);
+
+function poll_state() {
+
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.body.style.backgroundColor =
+        this.responseText;
+    }
+    xhttp.open("POST", "state");
+    xhttp.send();
+
+}
+</script>
+
+</html>
