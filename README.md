@@ -8,6 +8,8 @@ The goal of this project is to provide people with any kind of disability the ca
 The current demo version skips the home automation step for convience but it can easily be added. The current version makes use of pre-trained mental commands offered in the Virtual Brainwear device but future versions with real EEG headsets will be able to be easily trained and new mental commands will be able to be easily added.
 
 ---
+### Instructions
+
 
 The program structure currently contains a few important files that need to be run in order to be properly functional. First of all, Virtual Brainwear must be active. The user must also be able to use their secret key and own profile in order to test this.
 
